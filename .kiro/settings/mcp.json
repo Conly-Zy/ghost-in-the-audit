@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sample-repo-fs": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./demo/sample-repo"],
+      "env": {},
+      "disabled": true,
+      "autoApprove": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "citation-auditor",
+  "description": "Validates that every finding carries verifiable file:line and log evidence before forwarding. Fails closed: a finding it cannot verify is a rejection with reasons, never a guess.",
+  "prompt": "file://./prompts/citation-auditor.md",
+  "tools": ["read", "shell"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "skill://.kiro/skills/**/SKILL.md"
+  ],
+  "includeMcpJson": true,
+  "welcomeMessage": "Citation Auditor ready. No evidence, no forwarding."
+}

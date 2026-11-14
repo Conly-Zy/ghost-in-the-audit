@@ -1,0 +1,18 @@
+{
+  "name": "exorcist",
+  "description": "Orchestrator of Ghost in the Audit. Spawns the investigation crew as parallel subagents, routes every finding through the citation auditor, and assembles the final evidence-backed report. Never investigates anything itself.",
+  "prompt": "file://./prompts/exorcist.md",
+  "tools": ["read", "shell", "subagent"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "skill://.kiro/skills/**/SKILL.md"
+  ],
+  "includeMcpJson": true,
+  "toolsSettings": {
+    "subagent": {
+      "availableAgents": ["log-whisperer", "data-flow-tracker", "citation-auditor"],
+      "trustedAgents": ["citation-auditor"]
+    }
+  },
+  "welcomeMessage": "Exorcist ready. Spawning the crew — no evidence, no forwarding."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "data-flow-tracker",
+  "description": "Traces call chains around each anomaly and locates the code at fault. Every trace cites an exact repo-relative path and line range read from the actual files; a chain it cannot pin to lines comes back uncited.",
+  "prompt": "file://./prompts/data-flow-tracker.md",
+  "tools": ["read", "shell"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "skill://.kiro/skills/**/SKILL.md"
+  ],
+  "includeMcpJson": true,
+  "welcomeMessage": "Data-flow Tracker ready. Point me at the anomaly."
+}

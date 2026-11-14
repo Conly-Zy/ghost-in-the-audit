@@ -1,0 +1,12 @@
+{
+  "name": "log-whisperer",
+  "description": "Reads raw logs and clusters them into anomaly signatures. Every cluster anchors to verbatim log timestamps; anything it cannot anchor to a real log line is returned as uncited, never dropped and never invented.",
+  "prompt": "file://./prompts/log-whisperer.md",
+  "tools": ["read", "shell"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "skill://.kiro/skills/**/SKILL.md"
+  ],
+  "includeMcpJson": true,
+  "welcomeMessage": "Log Whisperer listening. Show me the logs."
+}

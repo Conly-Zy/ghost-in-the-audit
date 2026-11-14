@@ -1,0 +1,30 @@
+2026-10-31T02:10:01Z [BOOT] haunted-payments 0.3.1 listening on :8080
+2026-10-31T02:10:03Z [INFO] ledger healthcheck ok (48ms)
+2026-10-31T02:11:17Z [INFO] charge ch_8840 captured amount=12900
+2026-10-31T02:12:44Z [DOUBLE_COUNT_TIMEOUT] attempt 1 timed out for ch_8841
+2026-10-31T02:12:45Z [INFO] ledger healthcheck ok (51ms)
+2026-10-31T02:12:46Z [DOUBLE_COUNT_TIMEOUT] attempt 2 timed out for ch_8841
+2026-10-31T02:12:46Z [INFO] attempt 3 succeeded for ch_8841
+2026-10-31T02:12:47Z [DOUBLE_COUNT_TIMEOUT] aggregate tally inflated for ch_8841 (timeouts=3, real=2)
+2026-10-31T02:13:05Z [INFO] charge ch_8842 captured amount=4500
+2026-10-31T02:14:07Z [SWALLOWED_CAPTURE_ERROR] ch_901: ledger connection reset by peer
+2026-10-31T02:14:09Z [INFO] charge ch_902 captured amount=1999
+2026-10-31T02:14:22Z [INFO] charge ch_903 captured amount=750
+2026-10-31T02:15:19Z [STALE_CACHE_HIT] updated ch_8841 result without refreshing storedAt
+2026-10-31T02:15:44Z [STALE_CACHE_HIT] updated ch_902 result without refreshing storedAt
+2026-10-31T02:16:02Z [INFO] charge ch_904 captured amount=31000
+2026-10-31T02:17:52Z [UNHANDLED_REJECTION] audit write failed for ch_904: audit ledger unreachable
+2026-10-31T02:18:11Z [INFO] audit ledger recovered
+2026-10-31T02:19:33Z [DOUBLE_COUNT_TIMEOUT] attempt 1 timed out for ch_905
+2026-10-31T02:19:35Z [DOUBLE_COUNT_TIMEOUT] aggregate tally inflated for ch_905 (timeouts=2, real=1)
+2026-10-31T02:20:40Z [SWALLOWED_CAPTURE_ERROR] ch_906: ledger returned 502 without body
+2026-10-31T02:21:12Z [INFO] charge ch_907 captured amount=880
+2026-10-31T02:22:58Z [STALE_CACHE_HIT] updated ch_905 result without refreshing storedAt
+2026-10-31T02:23:41Z [INFO] charge ch_908 captured amount=15400
+2026-10-31T02:24:03Z [UNHANDLED_REJECTION] audit write failed for ch_908: audit ledger unreachable
+2026-10-31T02:25:27Z [INFO] audit ledger recovered
+2026-10-31T02:26:44Z [INFO] charge ch_909 captured amount=2300
+2026-10-31T02:27:19Z [DOUBLE_COUNT_TIMEOUT] attempt 1 timed out for ch_910
+2026-10-31T02:27:21Z [DOUBLE_COUNT_TIMEOUT] aggregate tally inflated for ch_910 (timeouts=2, real=1)
+2026-10-31T02:28:02Z [INFO] charge ch_911 captured amount=9900
+2026-10-31T02:29:14Z [SWALLOWED_CAPTURE_ERROR] ch_912: ledger connection reset by peer

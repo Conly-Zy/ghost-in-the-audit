@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "require-citation",
+      "trigger": "PreToolUse",
+      "matcher": "fs_write",
+      "action": {
+        "type": "command",
+        "command": "python3 src/evidence/validator.py"
+      }
+    }
+  ]
+}

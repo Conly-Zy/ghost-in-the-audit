@@ -1,0 +1,23 @@
+# --- secrets: never commit ---
+.env
+.env.*
+!.env.example
+secrets/
+
+# --- python runtime artifacts ---
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.hypothesis/
+
+# --- runtime verdict log produced by the citation-gate hook (root only) ---
+/logs/
+
+# --- os / editor noise ---
+.DS_Store
+Thumbs.db
+
+# NOTE: .kiro/ is a Kiroween hard requirement and must NEVER be ignored.
+# Every file under .kiro/ (agents, hooks, skills, steering, specs, settings)
+# is committed. Do not add broad dot-file patterns above that would exclude it.

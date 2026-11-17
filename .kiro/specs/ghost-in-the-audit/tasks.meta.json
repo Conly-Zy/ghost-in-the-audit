@@ -1,0 +1,24 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "8.3 (Documentation calibration complete, see T5 in `docs/platform-notes.md`. **Real Kiro IDE/CLI verification PENDING** until probes run in real sessions.) **T5 platform calibration** verifies custom agent frontmatter fields, tool allowlists, writable roots (`runs/*/inbox/**` for Audit_Agent), readable roots (`targets/**`, `runs/**`), and whether calls outside the subagent allowlist fail without a prompt (A14). Verify A13 by checking that subagent tool calls also trigger Hooks. If A13 fails, stop and escalate as a requirements change. ⛔ _R11.4–R11.8; A13, A14; D11_": [
+      {
+        "executionId": "dd5ed52b-9838-4214-867a-1b65a75df517",
+        "chatSessionId": "sess_b79e112c-dd36-4a4b-b39a-ce5a0e0d16fc",
+        "timestamp": 1794827332437
+      },
+      {
+        "executionId": "dd5ed52b-9838-4214-867a-1b65a75df517",
+        "chatSessionId": "sess_b79e112c-dd36-4a4b-b39a-ce5a0e0d16fc",
+        "timestamp": 1794828046009
+      }
+    ],
+    "9.2 (**Run in real Kiro IDE and CLI sessions**) Run one end-to-end audit each in Kiro IDE and CLI, from placing a Target through reading report.md and report.json. Verify findings, invalidated findings, statistics, and coverage against the ledger, all four agent statuses, and that every Citation has file:line and a timestamp. _R13; D2.2_": [
+      {
+        "executionId": "727160dd-0c85-4665-8864-971a36390da1",
+        "chatSessionId": "sess_d2e0a5e3-87ca-4c69-9bfd-458b328f9874",
+        "timestamp": 1794828136423
+      }
+    ]
+  }
+}

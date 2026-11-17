@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "ghost-post-tool-use",
+      "description": "ghost-in-the-audit PostToolUse: the Evidence_Recorder records read evidence while an audit is active.",
+      "trigger": "PostToolUse",
+      "matcher": "*",
+      "action": {
+        "type": "command",
+        "command": "python3 .kiro/scripts/hook_launcher.py post"
+      },
+      "timeout": 15,
+      "enabled": true
+    }
+  ]
+}

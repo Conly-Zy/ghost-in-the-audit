@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "ghost-pre-tool-use",
+      "description": "ghost-in-the-audit PreToolUse gate: routes to Citation_Gate / Write_Guard / Run_Controller; exit code 2 blocks the tool call.",
+      "trigger": "PreToolUse",
+      "matcher": "*",
+      "action": {
+        "type": "command",
+        "command": "python3 .kiro/scripts/hook_launcher.py pre"
+      },
+      "timeout": 90,
+      "enabled": true
+    }
+  ]
+}

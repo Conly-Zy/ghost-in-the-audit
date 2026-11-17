@@ -1,0 +1,18 @@
+[
+  {"name": "read_file", "class": "read", "response": {"kind": "file_text", "path": "$.path"}},
+  {"name": "read_files", "class": "read", "response": {"kind": "file_text_list"}},
+  {"name": "list_directory", "class": "read", "response": {"kind": "directory_listing", "path": "$.path"}},
+  {"name": "file_search", "class": "read", "response": {"kind": "path_list"}},
+  {"name": "grep_search", "class": "read", "response": {"kind": "match_list"}},
+  {"name": "invoke_sub_agent", "class": "read", "response": {"kind": "none"}},
+  {"name": "subagent_cartographer", "class": "read", "response": {"kind": "none"}},
+  {"name": "subagent_security-auditor", "class": "read", "response": {"kind": "none"}},
+  {"name": "subagent_dependency-auditor", "class": "read", "response": {"kind": "none"}},
+  {"name": "subagent_quality-auditor", "class": "read", "response": {"kind": "none"}},
+  {"name": "introspect", "class": "read", "response": {"kind": "none"}},
+  {"name": "disclose_context", "class": "read", "response": {"kind": "none"}},
+  {"name": "fs_write", "class": "write", "op": "create_or_modify", "paths": ["$.path"], "content": ["$.text", "$.content"]},
+  {"name": "fs_append", "class": "write", "op": "modify", "paths": ["$.path"], "content": ["$.text", "$.content"]},
+  {"name": "str_replace", "class": "write", "op": "modify", "paths": ["$.path"]},
+  {"name": "delete_file", "class": "write", "op": "delete", "paths": ["$.path"]}
+]

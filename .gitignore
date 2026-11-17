@@ -1,0 +1,18 @@
+# Keep audit outputs, target copies, and control requests out of Git (D3.1).
+runs/*
+targets/*
+control/*
+!runs/.gitkeep
+!targets/.gitkeep
+!control/.gitkeep
+
+# Local environment overrides and credentials
+.env
+.env.*
+!.env.example
+secrets/
+
+__pycache__/
+*.pyc
+.DS_Store
+.alma-snapshots
